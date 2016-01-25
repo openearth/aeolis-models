@@ -1,2 +1,7 @@
 *.nc
 *.out
+*.log
+*.pyc
+*.png
+#*#
+fort.*
