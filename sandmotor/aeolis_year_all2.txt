@@ -1,0 +1,21 @@
+xgrid_file = x.txt
+ygrid_file = y.txt
+bed_file = z.txt
+tide_file = tide.txt
+wave_file = waves.txt
+wind_file = wind.txt
+#boring 2D eveline de pree
+grain_dist = 28.76000 161.2000 112.1700 41.40000 33.82000 62.20000 14.35000 16.22000 40   
+grain_size = 0.000060 0.000150 0.000210 0.000300 0.000430 0.000600 0.001180 0.002000 0.005 
+nfractions = 9
+nlayers = 10
+nx = 29
+ny = 79
+tstop = 31557600
+dt = 3600
+output_vars = zb zs Ct Cu uw udir uth mass pickup w
+output_times = 2629800
+output_file = aeolis_year_all2.nc
+T = 1
+bi = 0.05
+scheme = euler_backward

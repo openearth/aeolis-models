@@ -16,3 +16,4 @@ output_vars = zb zs Ct Cu uw udir uth mass pickup w
 output_times = 86400
 T = 1
 bi = 0.05
+scheme = euler_backward

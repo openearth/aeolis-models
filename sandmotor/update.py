@@ -12,3 +12,9 @@ def update_bed(model):
             zb_new = zb.copy()
             zb_new[:,:] = np.loadtxt(fname)
             model.set_var('zb', zb_new)
+
+def update_TideInLake(model)
+    zs = model.get_var('zs')
+    ind=1
+    zs[ind] = -999
+    model.setvar['zs',zs]
