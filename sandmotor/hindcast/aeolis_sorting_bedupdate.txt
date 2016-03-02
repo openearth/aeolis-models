@@ -1,0 +1,22 @@
+xgrid_file = x.txt
+ygrid_file = y.txt
+bed_file = z.txt
+tide_file = tide.txt
+wave_file = waves.txt
+wind_file = wind.txt
+grain_dist = 0.209611 0.367879 0.569783 0.778801 0.939413 1.000000 0.939413 0.778801 0.569783 0.367879 0.209611
+grain_size = 0.000050 0.000100 0.000150 0.000200 0.000250 0.000300 0.000350 0.000400 0.000450 0.000500 0.000550
+nfractions = 11
+nlayers = 10
+nx = 29
+ny = 79
+tstop = 126230400
+dt = 3600
+output_vars = zb zs Ct Cu uw udir uth mass pickup w
+output_times = 2629746
+T = 1
+bi = 0.05
+scheme = euler_backward
+restart = 2629746
+callback = update.py:update_bed
+
