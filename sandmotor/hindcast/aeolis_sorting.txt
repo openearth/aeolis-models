@@ -18,4 +18,3 @@ T = 1
 bi = 0.05
 scheme = euler_backward
 restart = 2629746
-outputfile = aeolis_sorting.nc
