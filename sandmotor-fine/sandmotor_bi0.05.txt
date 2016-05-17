@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% AeoLiS model configuration                                       %%
-%% Date: 2016-05-17 14:58:10                                        %%
+%% Date: 2016-05-17 17:07:50                                        %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     bed_file = bathy/z_20110803.txt
@@ -12,7 +12,9 @@
      nlayers = 10
           nx = 149
           ny = 399
-output_times = 86400.00
+output_times = 604800.00
+output_types = 
+ output_vars = zb Ct Ct.avg Cu Cu.avg uth mass pickup pickup.sum
       scheme = euler_backward
    tide_file = tide.txt
        tstop = 126230400.00
