@@ -15,11 +15,22 @@ def update_bed(model):
     
     k = (t0 + timedelta(seconds=model.get_current_time())).strftime('%Y%m%d')
     if current is None or current != k:
-        zb = model.get_var('zb')
-        fname = 'bathy/z_%s.txt' % k
-        if os.path.exists(fname):
-            zb_new = zb.copy()
-            zb_new[:,:] = np.loadtxt(fname)
-            model.set_var('zb', zb_new)
+        if update_var(model, 'zb', 'bathy/z_%s.txt' % k):
             logger.info('Updated bathymetry to "%s"' % k)
             current = k
+        if update_var(model, 'mask', 'bathy/mask_%s.txt' % k):
+            logger.info('Updated mask to "%s"' % k)
+            
+
+def update_var(model, var, fname):
+    if os.path.exists(fname):
+        try:
+            val = model.get_var(var, clear=False)
+            val_new = val.copy()
+            val_new[:,:] = np.loadtxt(fname)
+            model.set_var(var, val_new)
+            return False
+        except:
+            return True
+    else:
+        return False
