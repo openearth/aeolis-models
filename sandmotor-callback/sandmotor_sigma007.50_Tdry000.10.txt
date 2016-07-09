@@ -3,7 +3,7 @@
 %% Date: 2016-07-09 20:50:39                                        %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-        Tdry = 1800.00
+        Tdry = 360.00
     bed_file = bathy/z_20110803.txt
    bedupdate = F
         beta = 130.00
@@ -22,7 +22,7 @@ output_types =
  output_vars = zb Ct Ct.avg Cu Cu.avg uth moist uw.avg mass pickup pickup.sum
        runup = T
       scheme = euler_backward
-       sigma = 8.00
+       sigma = 7.50
    tide_file = tide.txt
        tstop = 126230400.00
    wave_file = waves.txt
