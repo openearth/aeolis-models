@@ -1,3 +1,6 @@
+#!/bin/bash
+
+source ~/.envs/aeolis/bin/activate
 aeolis ~/src/aeolis-models/sandmotor/sandmotor-T3/sigma004.00_Tdry010.00_T003.00.txt
 aeolis ~/src/aeolis-models/sandmotor/sandmotor-T3/sigma006.00_Tdry010.00_T003.00.txt
 aeolis ~/src/aeolis-models/sandmotor/sandmotor-T3/sigma008.00_Tdry010.00_T003.00.txt
