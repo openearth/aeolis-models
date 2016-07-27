@@ -10,6 +10,19 @@ t0 = datetime(2011,8,1)
 logger = logging.getLogger(__name__)
 
 
+uth = np.loadtxt('../uth_t.txt')
+
+def update_bed2(model):
+
+    uth_current = np.interp(model.get_current_time(), uth[:,0], uth[:,1])
+    val = model.get_var('uth', clear=False)
+    val_new = val.copy()
+    val_new[:,:,:] = uth_current
+    model.set_var('uth', val_new)
+
+    update_bed(model)
+
+    
 def update_bed(model):
     global current
     
