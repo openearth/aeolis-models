@@ -1,0 +1,33 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AeoLiS model configuration                                       %%
+%% Date: 2016-07-16 11:05:20                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+           T = 3
+        Tdry = 3600.00
+    bed_file = ../bathy/z_20110803.txt
+   bedupdate = F
+        beta = 130.00
+          bi = 0.050000
+    callback = ../callback.py:update_bed
+          dt = 3600.00
+  grain_dist = 1.0
+  grain_size = 0.000354
+   mask_file = ../bathy/mask_20110803.txt
+  nfractions = 1
+     nlayers = 10
+          nx = 29
+          ny = 79
+output_times = 604800.00
+output_types = 
+ output_vars = zb Ct Ct.avg Cu Cu.avg uth moist uw.avg mass pickup pickup.sum
+       runup = T
+      scheme = euler_backward
+       sigma = 11.80
+   tide_file = ../tide.txt
+       tstop = 126230400.00
+   wave_file = ../waves.txt
+   wind_file = ../wind.txt
+  xgrid_file = ../x.txt
+  ygrid_file = ../y.txt
+threshold_file = ../uth_x.txt
