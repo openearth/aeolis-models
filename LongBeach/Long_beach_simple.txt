@@ -1,0 +1,27 @@
+bed_file = ztest.txt
+bedupdate = F
+bi = 0.000000
+dt = 60.000000
+# everython set to 1 grain size
+grain_size = 0.000255
+grain_dist = 1
+nfractions = 1
+nlayers = 3
+nx = 699
+ny = 0
+output_types = avg
+output_vars = Ct Cu pickup mass uw uth zb zs
+output_times = 3600.000000
+output_file = C:\Users\Sierd\Desktop\aeolisdata\LB_simple.nc
+scheme = euler_backward
+# for now tide is set to measuremnts at toke points measured in July 2016
+tide_file = tide.txt
+tstop = 2592000.000000
+# for now wind is constant set at 8m/s
+wind_file = wind_constant.txt
+xgrid_file = xtest.txt
+ygrid_file = ytest.txt
+Tdry = 10800.000000
+beta = 130.000000
+sigma = 4.200000
+z = 10.000000

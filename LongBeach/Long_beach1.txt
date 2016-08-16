@@ -1,0 +1,27 @@
+bed_file = ztest.txt
+bedupdate = F
+bi = 0.000000
+dt = 60.000000
+# input from Scott Feehan ('LB29 Sieve trial.xls' sample 1)
+grain_size = 0.00009 0.000125 0.000180 0.000250 0.000355
+grain_dist = 0.0133 0.28 0.1422 0.5378 0.0267 
+nfractions = 5
+nlayers = 10
+nx = 699
+ny = 0
+output_types = avg
+output_vars = Ct Cu pickup mass uw uth zb zs
+output_times = 3600.000000
+output_file = C:\Users\Sierd\Desktop\aeolisdata\test3.nc
+scheme = euler_backward
+# for now tide is set to measuremnts at toke points measured in July 2016
+tide_file = tide.txt
+tstop = 2592000.000000
+# for now wind is constant set at 8m/s
+wind_file = wind_constant2.txt
+xgrid_file = xtest.txt
+ygrid_file = ytest.txt
+Tdry = 10800.000000
+beta = 130.000000
+sigma = 4.200000
+z = 10.000000
